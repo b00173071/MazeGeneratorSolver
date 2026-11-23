@@ -5,11 +5,14 @@ public class Cell {
     private int row;
     private int col;
 
+    // Walls
     private boolean top = true;
     private boolean bottom = true;
     private boolean left = true;
     private boolean right = true;
 
+    // Algorithm states
+    private boolean visited = false;
     private boolean path = false;
 
     public Cell(int row, int col) {
@@ -55,6 +58,14 @@ public class Cell {
 
     public void setRightWall(boolean value) {
         right = value;
+    }
+
+    public boolean isVisited() {
+        return visited;
+    }
+
+    public void setVisited(boolean value) {
+        visited = value;
     }
 
     public boolean isPath() {
