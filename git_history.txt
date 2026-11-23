@@ -1,0 +1,47 @@
+commit 762165aae7f28043c5b209ec292c6580323d0c66 (HEAD -> main, origin/main)
+Author: b00173071 <b00173071@mytudublin.ie>
+Date:   Mon Nov 23 23:28:51 2026 +0000
+
+    Added MazePanel which draws the maze on screen
+
+    added MazeFrame which will create the application window showing the maze
+
+    Updated MazeSolver to find the shortest path implementing the "visited"
+    boolean which'll prevent it from searching the same place twice
+
+    Same case for MazeGenerator
+
+    Had to implement the visited boolean to pretty much nearly all the classes
+
+    You can initiate a maze however big with rows and columns and it will
+    provide a fully solved maze only highlighting the shortest or only path
+    in green squares for each Cell
+
+commit 46972b005dd88e341d45839c6f7009d07ba18c1c
+Author: b00173071 <b00173071@mytudublin.ie>
+Date:   Mon Nov 23 21:00:42 2026 +0000
+
+    Added MyQueue and MyStack kind of just allowing the maze to be built on
+
+    added MazeGen and MazeSolver very briefly as algorithms to make the maze
+    (not finished)
+
+commit 9a0a6e265cffb0c29be3d27ab2e6766f0379df40
+Author: b00173071 <b00173071@mytudublin.ie>
+Date:   Mon Nov 23 18:23:48 2026 +0000
+
+    Added Cell and Maze, majority of the code from the video
+
+    added Main aswell to start off
+
+commit 8ca0405f9f591b824bc6cf2dd507565ac7c767f9
+Author: b00173071 <b00173071@mytudublin.ie>
+Date:   Mon Nov 23 15:21:43 2026 +0000
+
+    Initiated project
+
+commit c6c0b71254203cc44a2e457d4a3e57512fd2a1da
+Author: b00173071 <b00173071@mytudublin.ie>
+Date:   Mon Nov 23 11:39:03 2026 +0000
+
+    initial commit
