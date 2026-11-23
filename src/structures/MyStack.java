@@ -2,20 +2,20 @@ package structures;
 
 import java.util.ArrayList;
 
-public class MyStack<T> {
+public class MyStack<Cell> {
 
-    private ArrayList<T> stack = new ArrayList<>();
+    private ArrayList<Cell> stack = new ArrayList<>();
 
-    public void push(T item) {
+    public void push(Cell item) {
         stack.add(item);
     }
 
-    public T pop() {
+    public Cell pop() {
         if(isEmpty()) return null;
         return stack.remove(stack.size() - 1);
     }
 
-    public T peek() {
+    public Cell peek() {
         if(isEmpty()) return null;
         return stack.get(stack.size() - 1);
     }

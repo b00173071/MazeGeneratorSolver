@@ -7,16 +7,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Maze maze = new Maze(25, 25);
+        Maze maze = new Maze(25,100);
 
-        MazeGenerator generator =
-                new MazeGenerator(maze);
+        MazeGenerator generator = new MazeGenerator(maze);
 
         generator.generate();
 
-        MazeSolver solver =
-                new MazeSolver(maze);
-
+        MazeSolver solver = new MazeSolver(maze);
+        
         solver.solve();
 
         new MazeFrame(maze);

@@ -2,15 +2,15 @@ package structures;
 
 import java.util.LinkedList;
 
-public class MyQueue<T> {
+public class MyQueue<Cell> {
 
-    private LinkedList<T> queue = new LinkedList<>();
+    private LinkedList<Cell> queue = new LinkedList<>();
 
-    public void enqueue(T item) {
+    public void enqueue(Cell item) {
         queue.addLast(item);
     }
 
-    public T dequeue() {
+    public Cell dequeue() {
         if(isEmpty()) return null;
         return queue.removeFirst();
     }
