@@ -2,16 +2,16 @@ package model;
 
 public class Cell {
 
+	//shows a single cell in a maze
+	
     private int row;
     private int col;
 
-    // Walls
     private boolean top = true;
     private boolean bottom = true;
     private boolean left = true;
     private boolean right = true;
 
-    // Algorithm states
     private boolean visited = false;
     private boolean path = false;
 
@@ -19,7 +19,7 @@ public class Cell {
         this.row = row;
         this.col = col;
     }
-
+    //getters and setters
     public int getRow() {
         return row;
     }

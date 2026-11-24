@@ -4,6 +4,7 @@ import java.util.LinkedList;
 
 public class MyQueue<Cell> {
 
+	//queue used for BFS traversal
     private LinkedList<Cell> queue = new LinkedList<>();
 
     public void enqueue(Cell item) {

@@ -13,7 +13,7 @@ public class MazePanel extends JPanel {
     public MazePanel(Maze maze) {
         this.maze = maze;
     }
-
+    //renders maze
     @Override
     protected void paintComponent(Graphics g) {
 

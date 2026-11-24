@@ -3,7 +3,8 @@ package structures;
 import java.util.ArrayList;
 
 public class MyStack<Cell> {
-
+	
+	//stack used for DFS backtracking
     private ArrayList<Cell> stack = new ArrayList<>();
 
     public void push(Cell item) {

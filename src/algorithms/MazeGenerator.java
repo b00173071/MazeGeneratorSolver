@@ -9,6 +9,7 @@ import structures.MyStack;
 
 public class MazeGenerator {
 
+	//should generate a maze randomly with DFS
     private Maze maze;
     private Random random = new Random();
 
@@ -29,13 +30,11 @@ public class MazeGenerator {
 
             Cell current = stack.peek();
 
-            ArrayList<Cell> neighbors =
-                    getUnvisitedNeighbors(current);
+            ArrayList<Cell> neighbors = getUnvisitedNeighbors(current);
 
             if(!neighbors.isEmpty()) {
 
-                Cell next =
-                   neighbors.get(random.nextInt(neighbors.size()));
+                Cell next = neighbors.get(random.nextInt(neighbors.size()));
 
                 removeWalls(current, next);
 

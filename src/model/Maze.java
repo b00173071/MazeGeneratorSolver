@@ -2,16 +2,20 @@ package model;
 
 public class Maze {
 
+	//stores maze
+	
     private Cell[][] grid;
     private int rows;
     private int cols;
 
+    
+    
     public Maze(int rows, int cols) {
         this.rows = rows;
         this.cols = cols;
 
         grid = new Cell[rows][cols];
-
+        //creates cells
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 grid[r][c] = new Cell(r, c);
@@ -21,8 +25,7 @@ public class Maze {
 
     public Cell getCell(int row, int col) {
 
-        if (row < 0 || col < 0 ||
-            row >= rows || col >= cols) {
+        if (row < 0 || col < 0 || row >= rows || col >= cols) {
             return null;
         }
 
